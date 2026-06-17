@@ -1,0 +1,15 @@
+git clone https://github.com/steed44/my-opencode-config.git ~/.config/opencode
+cd ~/.config/opencode
+npm install        # 安装 plugins 依赖
+opencode /connect  # 重新配置 API keys
+
+
+
+
+需要额外处理的：
+
+项目	原因	解决方式
+plugins (oh-my-openagent 等)	node_modules/ 未提交	在新电脑首次运行 opencode 时会自动安装，或手动在配置目录执行 npm install
+context-mode MCP	需要单独安装的本地 MCP 服务器	新电脑需要运行 opencode mcp install context-mode 或按文档重新安装
+Provider API Keys	未提交（安全原因）	新电脑需要重新运行 /connect 配置各 provider 的密钥
+mattpocock skills 更新	文件是 git 的静态副本，非 symlink	如果有上游更新需要重新 clone 安装

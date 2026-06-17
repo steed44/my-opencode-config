@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@opencode-ai/plugin": "1.4.7",
+    "@tarquinen/opencode-smart-title": "^0.1.7",
+    "opencode-claude-client": "^0.0.6",
+    "opencode-session-renamer": "^1.0.1"
+  }
+}
