@@ -66,8 +66,22 @@
           "name": "agnes-2.0-flash"
         }
       }
+    },
+    "zen": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "OpenCode Zen",
+      "options": {
+        "baseURL": "https://opencode.ai/zen/v1/chat/completions"
+      },
+      "models": {
+        "deepseek-v4-flash-free": {
+          "name": "deepseek-v4-flash-free"
+        }
+      }
     }
   },
+  "model": "opencode/deepseek-v4-flash-free",
+  "small_model": "opencode/deepseek-v4-flash-free",
   "instructions": [
     "AGENTS.md",
     "graphify-out/GRAPH_REPORT.md"
